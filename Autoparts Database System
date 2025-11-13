@@ -1,0 +1,73 @@
+# Autoparts Database System 🚗
+
+**Sistema de Gestión Integral para Distribuidora de Repuestos Automotrices**
+
+*Desarrollado por: Fernando P. - Database Architect & Business Intelligence*
+
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15+-blue)
+![Python](https://img.shields.io/badge/Python-3.11+-green)
+![PowerBI](https://img.shields.io/badge/Power_BI-Dashboards-yellow)
+![License](https://img.shields.io/badge/License-MIT-orange)
+
+## 📋 Descripción
+Sistema completo de gestión para distribuidora de repuestos automotrices con control de inventario inteligente, procesamiento de ventas, gestión de clientes y sistema de compatibilidad vehículo-repuesto.
+
+## 🏗️ Diagrama de Entidad-Relación
+![Diagrama ER](Diagrama%20ERD%20Autoparts.png)
+
+## 🚀 Características Principales
+
+### ✅ Gestión de Inventario
+- Control de stock en tiempo real
+- Alertas automáticas de stock bajo
+- Gestión de múltiples ubicaciones
+- Rotación de inventario y análisis ABC
+
+### ✅ Sistema de Compatibilidad
+- Búsqueda inteligente por marca, modelo y año
+- Base de datos de vehículos completa
+- Relaciones muchos-a-muchos productos-vehículos
+
+### ✅ Procesos Comerciales
+- Gestión completa de pedidos y ventas
+- Facturación integrada con cálculos de IVA
+- Seguimiento de estado de pedidos
+- Historial de transacciones por cliente
+
+### ✅ Analytics y Reportes
+- Dashboard de ventas en tiempo real
+- Reportes de stock crítico
+- Análisis de margen de ganancia
+- Seguimiento de performance por categoría
+
+## 📊 Estructura de Datos
+
+### Entidades Principales (10 Tablas)
+- **PRODUCTOS** - Catálogo completo de repuestos
+- **INVENTARIO** - Control de stock y ubicaciones
+- **CLIENTES** - Talleres, distribuidores y particulares
+- **PROVEEDORES** - Fabricantes y distribuidores
+- **PEDIDOS** - Órdenes de compra de clientes
+- **VENTAS** - Transacciones y facturación
+- **VEHÍCULOS** - Base de compatibilidad
+- **COMPATIBILIDADES** - Relaciones productos-vehículos
+- **CATEGORÍAS** - Clasificación de productos
+- **MARCAS** - Fabricantes de vehículos
+
+## 🛠️ Instalación y Configuración
+
+### Prerrequisitos
+- PostgreSQL 15+
+- Python 3.11+
+- Power BI Desktop (opcional para dashboards)
+
+### Instalación Rápida
+```bash
+# Clonar repositorio
+git clone https://github.com/tuusuario/autoparts-database.git
+
+# Configurar base de datos
+psql -h localhost -U postgres -d autoparts -f schema.sql
+
+# Instalar dependencias Python
+pip install pandas psycopg2-binary sqlalchemy
